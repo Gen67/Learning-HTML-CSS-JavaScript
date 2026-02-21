@@ -1,0 +1,66 @@
+.all-yt-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+
+
+
+
+
+
+
+.thumbnail-size{
+    width: 100%;
+}
+.thumbnail-row{
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.video-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.channel-picture-area{
+    display:inline-block;
+    width: 70px;
+    vertical-align: top;
+}
+
+.creator-profile-picture{
+    display: inline-block;
+    width: 45px;
+    border-radius: 50%;
+    vertical-align: top;
+}
+
+
+.video-info{
+    display: inline-block;
+    width: 300px;
+    padding-left: 10px;
+}
+
+
+.video-title{
+    font-family: 'Roboto';
+    font-size:17px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.channel-name{
+    font-family:'Roboto';
+    color:gray;
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+.views-and-dates{
+    font-family: 'Roboto';
+    color: gray;
+    font-size: 12px;
+}
