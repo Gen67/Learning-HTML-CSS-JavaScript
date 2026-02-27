@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="border">
+        <div class="top-layer">
+             <input class="input-bar" type="text" name="firstInput" id="firstNumber" placeholder="First Number">
+             <input class="input-bar" type="text" name="secondInput" id="secondNumber" placeholder="Second Number">
+             <select name="selectOperator" id="operator">
+                <option value="add">Addition</option>
+                <option value="subtact">Subtraction</option>
+                <option value="multiply">Multiplication</option>
+                <option value="divide">Division</option>
+             </select>
+        </div>
+        
+        <div class="display-layer">
+            <div class="button-area">
+                <label id="answer">Answer</label>
+                <button onclick="calculator()" class="calcu-btn">Calculate</button>
+            </div>
+        </div>
+
+    </div>
+
+  
+
+
+</body>
+
+  <script> 
+    
+function calculator(){
+    const firstNumber = parseFloat(document.getElementById("firstNumber").value);
+    const secondNumber = parseFloat(document.getElementById("secondNumber").value);
+    const result = document.getElementById("answer");
+    const operator = document.getElementById("operator").value;
+
+if(isNaN(firstNumber) || isNaN(secondNumber)){
+    result.innerText = ("Must Be a Number")
+    result.innerText.style.color = "red";
+}
+
+let answer; 
+switch(operator){
+    case "add":
+      answer =  firstNumber + secondNumber;
+      break; 
+    case "subtract": 
+        answer = firstNumber - secondNumber; 
+        break; 
+    case "multiply": 
+        answer = firstNumber * secondNumber;
+        break;
+    case "divide": 
+        if(secondNumber === 0){
+            result.textContent = ("Cannot Divided by 0")
+            result.style.color = "red";
+            return;
+        }
+
+        answer = firstNumber/secondNumber;
+        break;
+    default: 
+            result.textContent = ("Invalid");
+            result.style.color = "red";
+            break;
+
+}
+
+    result.textContent = answer;
+    result.style.color = "green";
+
+}
+
+    </script>
+</html>
