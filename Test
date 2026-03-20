@@ -1,0 +1,42 @@
+//Balance
+//Withdraw
+//Deposit
+//Previous Transaction
+
+function BankAccount(){ 
+let balance_amount = 1000;
+let withdraw_amount; 
+let deposit_amount; 
+let amount; 
+let PreviousTransaction; 
+const result = document.getElementById('text');
+
+var user_action = document.getElementById('Select_Action')
+
+
+function deposit(amount){
+    if(amount != 0){
+        balance_amount = balance_amount + amount; 
+        PreviousTransaction = amount;
+    }
+}
+
+function withdraw(amount){ 
+    if(amount != 0){
+         balance_amount = balance_amount - amount; 
+         PreviousTransaction = amount;
+    }
+}
+
+
+function checkPreviousTransaction(){ 
+    if(PreviousTransaction < 0){
+        result.textContent = "Deposit Amount: " + PreviousTransaction;
+    } else if(PreviousTransaction > 0){
+        result.textContent = "Withdraw Amount: " + Math.abs(PreviousTransaction); 
+    } else{ 
+        result.textContent = "No Transaction has Occur."; 
+    }
+}
+
+
