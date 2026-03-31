@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: #3498db;
+    background-image: url(Backgorund.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+
+.stopWatch-container {
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 50px;
+    background-color: rgba(36, 33, 36, 0.288);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    will-change: backdrop-filter;
+}
+
+.start-btn{ 
+    background-color: green;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 30px;
+    font-size: 15px;
+    font-family: Verdana;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.stop-btn{
+     background-color: rgb(194, 32, 32);
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 30px;
+    font-size: 15px;
+    font-family: Verdana;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+
+.reset-btn{ 
+     background-color: rgb(75, 117, 255);
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 30px;
+    font-size: 15px;
+    font-family: Verdana;
+    font-weight: 900;
+    cursor: pointer;
+    
+}
+
+
+.start-btn:hover{ 
+    color: green;
+    background-color: white;
+    transition: 0.15s;
+}
+
+.stop-btn:hover{
+    color: rgb(194, 32, 32);
+    background-color: white;
+    transition: 0.15s;
+}
+.reset-btn:hover{ 
+    color:  rgb(75, 117, 255);
+    background-color: white;
+    transition: 0.15s;
+}
+
+.stopwatch{ 
+    font-size: 90px;
+    font-weight: 900;
+    font-family: Verdana;
+}
