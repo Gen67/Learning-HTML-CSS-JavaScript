@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=  , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calcu-layout">
+        <div class="display">
+            <input id="display" readonly>
+        </div>
+        <div class="btn-group">
+            <button onclick="toCalculate('+')" value="+" class="operatorBTN">+</button>
+            <button onclick="toCalculate('1')" value="1">1</button>
+            <button onclick="toCalculate('2')" value="2">2</button>
+            <button onclick="toCalculate('3')" value="3">3</button>
+
+            <button onclick="toCalculate('-')" value="-" class="operatorBTN">-</button>
+            <button onclick="toCalculate('4')" value="4">4</button>
+            <button onclick="toCalculate('5')" value="5">5</button>
+            <button onclick="toCalculate('6')" value="6">6</button>
+
+            <button onclick="toCalculate('/')" value="/" class="operatorBTN">/</button>
+            <button onclick="toCalculate('8')" value="8">8</button>
+            <button onclick="toCalculate('9')" value="9">9</button>
+            <button onclick="toCalculate('0')" value="0">0</button>
+
+            <button onclick="toCalculate('*')" value="*" class="operatorBTN">*</button>
+            <button onclick="toCalculate('.')" value=".">.</button>
+            <button onclick="calculate()" value="=" >=</button>
+            <button onclick="clearDisplay()" value="C">C</button>
+        
+        </div>
+    </div>
+
+
+
+</body>
+<script src="code.js"></script>
+</html>
