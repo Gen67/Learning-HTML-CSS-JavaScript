@@ -1,0 +1,71 @@
+body{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+button{ 
+    width: 50px;
+    height: 35px;
+    background-color: rgb(27, 33, 56);
+    color: white;
+    font-family: Verdana;
+    border: none;
+    border-radius: 5px;
+   box-shadow: rgba(161, 161, 161, 0.27) 0px 0px 0.25em, rgba(253, 254, 255, 0.05) 0px 0.25em 1em;
+    cursor: pointer;
+}
+
+
+button:hover{
+    background-color: rgb(0, 255, 213);
+    color: black;
+    box-shadow: rgba(161, 161, 161, 0.27) 0px 0px 0.25em, rgba(253, 254, 255, 0.05) 0px 0.25em 1em;
+}
+
+
+button:active{
+    background-color: rgb(0, 255, 213);
+    color: black;
+    box-shadow: rgba(161, 161, 161, 0.27) 0px 0px 0.25em, rgba(253, 254, 255, 0.05) 0px 0.25em 1em;
+    transform: translateY(2px);
+}
+
+
+input{
+    width: 200px;
+    height: 70px;
+    background-color: transparent;
+    border: none;
+    text-align: right;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+
+}
+
+
+.calculator-layout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(23, 28, 49);
+    height: 45vh;
+    width: 33vh;
+    border: none;
+    border-radius: 20px;
+    box-shadow: rgba(231, 231, 231, 0.034) 0px 30px 60px -12px inset, rgba(41, 41, 41, 0.3) 0px 18px 36px -18px inset;
+}
+
+.keys{
+    display:grid;
+    grid-template-columns: repeat( 4, 1fr);
+    gap: 10px;
+}
+
+.imp-key{
+    color: rgb(0, 255, 213);
+}
