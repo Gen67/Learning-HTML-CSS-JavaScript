@@ -1,0 +1,7 @@
+.box{ 
+    display: flex;
+    justify-content: center;
+    border: 5px solid black;
+    width: 200px;
+    background-color: lightgreen;
+}
