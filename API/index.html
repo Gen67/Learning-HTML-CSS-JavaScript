@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="pokemonName" placeholder="Enter Pokemon Name">
+    <button onclick="getPokemonData()">Search</button> <br>
+    
+  
+    
+
+
+    <div class="Pokecard">
+
+        <div class="pokemonInfo">
+            <img src="" alt="PokemonSprite" id="pokemonSprite" style="display:none; width: 300px; height: 300px; border: 5px solid r gb(83, 0, 0); border-radius: 20px;  background-color: rgb(240, 240, 240); box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;">
+            <div class="info">  
+                <p id="pokemonId" class="pokemon-data"></p>
+                <p id="pokemonNameElement" class="pokemon-data"> </p>
+                <p id="pokemonType" class="pokemon-data-type"></p>
+            </div>
+         
+        </div>
+
+  
+
+    <div class="pokeDex">
+            
+            <div class="height">
+                <h1>Height</h1>
+                <p id="pokemonHeight" class="poke-info"></p>
+            </div>
+            
+            <div class="weight">
+                <h1>Weight</h1>
+                <p id="pokemonWeight" class="poke-info"></p>
+            </div>
+            
+            <div class="category">
+                <h1>Item Held</h1>
+                <p id="pokemonItems" class="poke-info"></p>
+            </div>
+
+            <div class="abilities">
+                <h1>Abilities</h1>
+                <p id="pokemonAbilities" class="poke-info"></p>
+            </div>
+           
+            <div class="gender">
+                <h1>Gender</h1>
+                <img src="male-gender.png" alt="" id="gender-icon" style="width: 50px; height: 50px; display: none;">
+                <img src="female.png" alt="" id="gender-icon" style="width: 50px; height: 50px; display: none; ">
+            </div>
+        </div>
+
+    </div>
+
+
+
+  
+
+
+
+
+
+
+</body>
+<script src="script.js"></script>
+</html>
