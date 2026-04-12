@@ -1,0 +1,94 @@
+body{ 
+    background-image: url(BG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    font-family: Verdana;
+}
+
+
+input{ 
+    height: 30px;
+    width: 200px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+button{ 
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;   
+    cursor: pointer;
+    background-color: rgba(33, 192, 255, 0.349);
+    backdrop-filter: blur(15px);
+    font-weight: bold;
+    color: white;
+}
+
+button:hover{ 
+    background-color: rgba(61, 200, 255, 0.692);
+    color: rgb(255, 255, 255);
+}
+
+button:active{ 
+    background-color: rgba(61, 200, 255, 0.692);
+    color: rgb(255, 255, 255);
+    transform: scale(0.95);
+}
+
+
+.card{ 
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 255, 255, 0.233);
+    backdrop-filter: blur(10px);
+    width: 300px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 20px;
+    height: 400px;
+    padding: auto;
+    color: white;
+   
+}
+
+h2{ 
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+p{  
+    font-size: 20px;
+    margin: 5px;
+}
+
+.temperature{ 
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.humidity{ 
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.weather-display{ 
+    font-size:  50px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.error-display{ 
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(255, 0, 0, 0.555);
+    margin: 20px 0;
+}
