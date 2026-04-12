@@ -8,12 +8,12 @@
  
  weatherForm.addEventListener("submit", async event => {
 
-    event.preventDefault();
+    event.preventDefault(); // Prevent form from submitting and refreshing the page
     const city = cityInput.value.trim(); 
 
     if(city){
         try{
-            const weatherData = await getWeatherData(city);
+            const weatherData = await getWeatherData(city); // Fetch weather data for the entered city
             displayWeatherInfo(weatherData);
         } catch(error){
                 displayError("An error occurred while fetching the weather data. Please try again later.");
@@ -31,24 +31,27 @@
  async function getWeatherData(city){ 
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
     const response = await fetch(apiUrl); 
-    console.log(response); 
+    console.log(response)
+    
 
 
     if(!response.ok){
         throw new Error("Could Not Fetch Weather Data")
     }  
-
     return  await response.json(); 
 
 
+
 }
+
 
  async function displayWeatherInfo(data){ 
     const { name: city, 
             main:{temp, humidity}, 
             weather: [{description, id}]} = data; 
 
-
+        console.log(data); 
+        
     card.textContent = "" ; 
     card.style.display = "flex"; 
 
@@ -67,7 +70,7 @@
         humidityDisplay.classList.add("humidity");
 
         descDisplay.textContent = description;
-        descDisplay.classList.add("temperature");
+        descDisplay.classList.add("description");
 
        weatherEmoji.textContent = getWeatherIcon(id); 
         weatherEmoji.classList.add("weather-emoji");
@@ -80,9 +83,6 @@
 
 
  }
-
-
-
 
  function getWeatherIcon(icon){ 
 
