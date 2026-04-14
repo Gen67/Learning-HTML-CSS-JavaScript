@@ -22,7 +22,7 @@ reminderInput.addEventListener('submit', event =>{
 
 
         counter.style = 'display: block';
-        counter.textContent = reminderList.children.length;
+        counter.textContent = ` Task:${reminderList.children.length}`;
     } else{ 
         alert('Please enter a reminder');
     }
