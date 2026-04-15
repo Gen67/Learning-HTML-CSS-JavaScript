@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculator">
+         <input type="text" name="" id="number-display">
+        <div class="input-btn">
+            <button class="input-key-operator" onclick="toCalculate('+')">+</button>
+            <button class="input-key" onclick="toCalculate('1')">1</button>
+            <button class="input-key" onclick="toCalculate('2')">2</button>
+            
+            <button class="input-key-operator" onclick="toCalculate('-')">-</button>
+            <button class="input-key" onclick="toCalculate('3')">3</button>
+            <button class="input-key" onclick="toCalculate('4')">4</button>
+
+            <button class="input-key-operator" onclick="toCalculate('*')">*</button>
+            <button class="input-key" onclick="toCalculate('5')">5</button>
+            <button class="input-key" onclick="toCalculate('6')">6</button>
+
+            <button class="input-key-operator" onclick="toCalculate('/')">/</button>
+            <button class="input-key" onclick="toCalculate('7')">7</button>
+            <button class="input-key" onclick="toCalculate('8')">8</button>
+            
+            <button class="input-key-operator" onclick="calculate()">=</button>
+            <button class="input-key" onclick="toCalculate('0')">0</button>
+            <button class="input-key-operator" onclick="clearInput()">C</button>
+        </div>
+    </div>    
+   
+
+
+</body>
+<script src="script.js"></script>
+</html>
