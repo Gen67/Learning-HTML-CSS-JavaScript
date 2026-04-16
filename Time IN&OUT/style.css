@@ -1,0 +1,59 @@
+body{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.time-in-out{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 20px;
+    width: 500px;
+    height: 400px;
+    background-color: azure;
+}
+
+h1{ 
+    font-size: 65px;
+    font-family: Verdana;
+}
+
+button{ 
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: rgb(80, 177, 177);
+    color: white;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+button:active{ 
+    background-color: rgb(132, 230, 230);
+    transform: scale( 0.90);
+}
+
+
+
+.title{
+    font-size: 20px;
+}
+
+.time-holder{ 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: 3px solid black;
+    height: auto;
+    text-align: center;
+}
