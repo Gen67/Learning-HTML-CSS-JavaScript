@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/loginSite.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form class="login-layout">
+        <h1 class="title">The Azure Lantern Hotel</h1>
+        <div class="names-form">
+            <input type="text" id="firstName" autocomplete="name" placeholder ="First name">
+            <input type="text" id="secondName" placeholder="Last name">
+        </div>
+        
+        <div class="email-phone-form">
+            <input type="text" id="email" autocomplete="email" placeholder ="Email">
+            <input type="text" id="confirmEmail" autocomplete="email"  placeholder="Confirm Email">
+            <input type="text" id="phone" autocomplete="cc-number"  placeholder ="Phone no.">
+        </div>
+
+        <div class="address-form">
+            <input type="text"  id="address" autocomplete="street-address"  placeholder ="Address">
+            <input type="text" id="city" autocomplete="country-name" placeholder="City">
+            <input type="text" id="postCode" autocomplete="tel-country-code" placeholder ="Post Code">
+            <input type="text" id="country" autocomplete="country-name" placeholder="Country">
+        </div>
+
+        <div class="extraInfo-form">
+            <label for="survey">How did you hear from us?</label>
+            <select name="How you Hear From us?" id="survey">
+                <option value="">Friends</option>
+                <option value="">Youtube</option>
+                <option value="">Content Creator</option>
+            </select>
+        </div>
+
+        <div class="btn-form">
+            <button type="submit">Submit</button>
+        </div>
+        
+        
+    </form>
+
+
+</body>
+<script src="../JavaScript/loginSite.js"></script>
+</html>

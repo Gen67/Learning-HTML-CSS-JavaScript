@@ -1,0 +1,114 @@
+ @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Playpen+Sans+Hebrew:wght@100..800&display=swap');
+
+
+
+
+body{ 
+    display: flex;
+    background-image: url(../Images/BeachSunSetBG.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Playpen Sans Hebrew";
+}
+
+
+.login-layout{ 
+    display: flex;
+    gap: 10px; 
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: rgba(223, 143, 233, 0.288);
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(0, 0, 0, 0.781) 0px 5px 15px;
+    height: 600px;
+    position: relative;
+    text-align: center;
+    padding: 15px;
+
+}
+
+
+.address-form{ 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.email-phone-form{ 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+
+
+.extraInfo-form{ 
+    margin-top: 15px;
+    text-align: center;
+}
+
+.btn-form{ 
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    left:30%;
+}
+
+
+
+
+.title{ 
+    padding: 20px;
+    border: 1px solid rgba(238, 167, 208, 0.068);
+    box-shadow: rgba(255, 178, 245, 0.4) 0px 0px 0px 2px, rgba(255, 164, 255, 0.65) 0px 4px 6px -1px, rgba(251, 130, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 5px;
+    background-color: rgba(252, 177, 255, 0.315);
+    backdrop-filter: blur(5px);
+}
+
+
+
+
+button{ 
+    font-family: "Playpen Sans Hebrew";
+    width: 200px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid rgb(70, 9, 82);
+    background-color: rgb(121, 19, 121);
+    color: white;
+}
+
+button:active{ 
+    background-color: rgb(117, 48, 117);
+    transform: scale(0.95);
+}
+
+input{ 
+    font-family: "Playpen Sans Hebrew";
+    width: 250px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    
+}
+
+input:focus{ 
+    outline: none;
+    border: none;
+}
+
+select{ 
+    width: 100px;
+    font-family: "Playpen Sans Hebrew";
+    background-color: rgba(255, 167, 229, 0.397);
+    color: rgb(10, 10, 10);
+    font-weight: bolder;
+     backdrop-filter: blur(5px);
+}
